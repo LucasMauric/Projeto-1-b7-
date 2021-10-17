@@ -1,15 +1,175 @@
 *{
     margin: 0;
+    padding: 0;
+
 }
+a{
+    text-decoration: none;
+}
+body{
+    font-size: 12px;
+    font-family: Arial;
+}
+
 .topo{
     height: 30px;
     background-color: #171717;
 }
 
-.top-nav{
+.topo-nav{
     width: 100%;
     max-width: 1040px;
-    background-color: red;
+    
     height: 30px;
     margin: auto;
 }
+
+.topo-left{
+    width: 50%;
+    height: 30px;
+    float: left;
+    
+
+}
+.topo-right{
+    width: 50%;
+    height: 28px;
+    margin-top: 2px;
+    float: right;
+    text-align: right;
+    
+}
+
+.topo-left ul{
+    list-style: none;
+}
+
+.topo-left li {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 8px 0 8px;
+}
+
+.topo-left ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.topo-left li .ativo{
+    color: blue;
+}
+
+.topo-busca{
+    width: 110px;
+    height: 24px;
+    outline: none;
+}
+.topo-right a{
+    float: right;
+}
+
+.topo-right input{
+    float: right;
+
+}
+
+.topo-right img{
+    margin-right: 3px;
+}
+.busca{
+    background-color: red;
+    
+}
+
+.topo-2{
+    height: 95px;
+    background-color: #fff;
+}
+
+.topo-2init{
+    width: 100%;
+    max-width: 1040px;
+    
+    height: 95px;
+    margin: auto;
+}
+.logo{
+    width: 230px;
+    height: 90px;
+    margin-top: 5px;
+    float: left;
+    
+}
+
+.topo-2 .banner {
+    width: 650px;
+    height: 80px;
+    margin-top: 7px;
+    float: right;
+    
+    
+}
+.menu{
+    height: 40px;
+    background-color: red;
+}
+
+.menuint{
+    width: 100%;
+    max-width: 1040px;
+    height: 40px;
+    margin: auto;
+  
+}
+
+.menuint ul li{
+    float: left;
+    margin: auto;
+    line-height: 40px;
+    height: 40px;
+    padding-left: 8px;
+    padding-right: 8px;
+    list-style: none;
+}
+.menu li:hover .submenu{
+    display: block;
+}
+.menu a {
+    color: #fff;
+}
+.submenu{
+    
+    width: 150px;
+    position: absolute;
+    background-color: red;
+    display:none;
+}
+
+.submenuint{
+    width: 140px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+   
+}
+.submenuint:hover{
+    background-color: #ff5555;
+}
+
+.ultimasnoticias{
+    height: 50px;
+    
+}
+.ultimasnoticias-init{
+    width: 100%;
+    width: 1040px;
+    margin: auto;
+    height: 50px;
+    background-color: grey;
+
+}
+
+
+
+
