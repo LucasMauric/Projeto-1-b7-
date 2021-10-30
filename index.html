@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
     <header class="topo">
@@ -42,9 +43,10 @@
 
     </section>
 
-    <div class="menu">
+    <div class="menu" >
         <div class="menuint">
-            <ul>
+            <img src="img/menu-aberto.png"  border="0"  height="40" width="40" class="menumobile" onclick="toggleMenu()">
+            <ul id="menu">
                 <li><a href="#" class="ativo" >Home</a></li>
                 <li><a href="#" >Economia</a></li>
                 <li>
@@ -98,9 +100,258 @@
     </div>
     <div class="ultimasnoticias">
         <div class="ultimasnoticias-init">
+            <div class="ultnoticiasitem">
+                <div class="ultnoticiastitulo">
+                    <P>ÚLTIMAS NOTÍCIAS</P>
+                </div>
+                <div class="ultnoticiasnoticia">Alguma notícia de algum texto que ira ficar por aqui mesmo.</div>
+
+            </div>
             
         </div>
 
+    </div>
+    <div class="container">
+        <div class="containerint">
+            <div class="leftside">
+                <div class="slideshow" id="slideshow">
+                    <div class="slidebolinhas">
+                        <div class="bolinhas" onclick="mudarSlide(0)" class="ss"></div>
+                        <div class="bolinhas" onclick="mudarSlide(1)"></div>
+                        <div class="bolinhas" onclick="mudarSlide(2)"></div>
+                        <div class="bolinhas" onclick="mudarSlide(3)"></div>
+                            
+                    </div>
+                    <div class="slideshowarea">
+                        
+                        <div class="slide" style="background-image: url(http://www.google.com/google.jpg);  " >
+                            <div class="slide-info">
+                                <div class="slide-titulo">Titulo de teste 1 </div>
+                                <div class="slide-subtitulo">Subtitulo de  teste </div>
+                            </div>
+                        
+                        
+                        </div>
+                        <div class="slide" style="background-image: url(http://www.google.com/google.jpg);  " >
+                            <div class="slide-info">
+                                <div class="slide-titulo">Titulo de teste 2 </div>
+                                <div class="slide-subtitulo">Subtitulo de  teste </div>
+                            </div>
+                        
+                        
+                        </div>
+                        <div class="slide" style="background-image: url(http://www.google.com/google.jpg);  " >
+                            <div class="slide-info">
+                                <div class="slide-titulo">Titulo de teste 3 </div>
+                                <div class="slide-subtitulo">Subtitulo de  teste </div>
+                            </div>
+                        
+                        
+                        </div>
+                        <div class="slide" style="background-image: url(http://www.google.com/google.jpg);  " >
+                            <div class="slide-info">
+                                <div class="slide-titulo">Titulo de teste 4 </div>
+                                <div class="slide-subtitulo">Subtitulo de  teste </div>
+                            </div>
+                        
+                        
+                        </div>
+                    </div>
+                    
+                   
+                </div>
+                <div class="widget">
+                    <div class="widget-titulo">NOTÍCIAS</div>
+                    <div class="widget-conteudo">
+                        <!-- Noticia Do canto esquero-->
+                        <div class="noticia-left">
+                            <div class="noticiaitem noticiabig">
+                                <div class="noticiaimg">
+                                    <img src="" alt="" width="80" height="80" border="0">
+                                </div>
+                                <div class="noticiatitulo">
+                                    Titulo qualquer
+                                </div>
+                                <div class="noticiainfo">
+                                    Informaçao qualquer
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Noticia Do canto direito-->
+                        <div class="noticia-right">
+                            <div class="noticiaitem">
+                                <div class="noticiaimg">
+                                    <img src="" alt="" width="80" height="80" border="0">
+                                </div>
+                                <div class="noticiatitulo">
+                                    Titulo qualquer
+                                </div>
+                                <div class="noticiainfo">
+                                    Informaçao qualquer
+                                </div>
+                            </div>
+                            <div class="noticiaitem">
+                                <div class="noticiaimg">
+                                    <img src="" alt="" width="80" height="80" border="0">
+                                </div>
+                                <div class="noticiatitulo">
+                                    Titulo qualquer
+                                </div>
+                                <div class="noticiainfo">
+                                    Informaçao qualquer
+                                </div>
+                            </div>
+                            <div class="noticiaitem">
+                                <div class="noticiaimg">
+                                    <img src="" alt="" width="80" height="80" border="0">
+                                </div>
+                                <div class="noticiatitulo">
+                                    Titulo qualquer
+                                </div>
+                                <div class="noticiainfo">
+                                    Informaçao qualquer
+                                </div>
+                            </div>
+                            <div class="noticiaitem">
+                                <div class="noticiaimg">
+                                    <img src="" alt="" width="80" height="80" border="0">
+                                </div>
+                                <div class="noticiatitulo">
+                                    Titulo qualquer
+                                </div>
+                                <div class="noticiainfo">
+                                    Informaçao qualquer
+                                </div>
+                            </div>
+                        </div>
+                        <div style="clear:both"></div>
+    
+                    </div>
+                </div>
+                <div class="widget">
+                    <div class="widget-titulo">ESPORTES</div>
+                    <div class="widget-conteudo">
+                        <!-- Noticia Do canto esquero-->
+                        <div class="noticia-left">
+                            <div class="noticiaitem noticiabig">
+                                <div class="noticiaimg">
+                                    <img src="" alt="" width="80" height="80" border="0">
+                                </div>
+                                <div class="noticiatitulo">
+                                    Titulo qualquer
+                                </div>
+                                <div class="noticiainfo">
+                                    Informaçao qualquer
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Noticia Do canto direito-->
+                        <div class="noticia-right">
+                            <div class="noticiaitem">
+                                <div class="noticiaimg">
+                                    <img src="" alt="" width="80" height="80" border="0">
+                                </div>
+                                <div class="noticiatitulo">
+                                    Titulo qualquer
+                                </div>
+                                <div class="noticiainfo">
+                                    Informaçao qualquer
+                                </div>
+                            </div>
+                            <div class="noticiaitem">
+                                <div class="noticiaimg">
+                                    <img src="" alt="" width="80" height="80" border="0">
+                                </div>
+                                <div class="noticiatitulo">
+                                    Titulo qualquer
+                                </div>
+                                <div class="noticiainfo">
+                                    Informaçao qualquer
+                                </div>
+                            </div>
+                            <div class="noticiaitem">
+                                <div class="noticiaimg">
+                                    <img src="" alt="" width="80" height="80" border="0">
+                                </div>
+                                <div class="noticiatitulo">
+                                    Titulo qualquer
+                                </div>
+                                <div class="noticiainfo">
+                                    Informaçao qualquer
+                                </div>
+                            </div>
+                            <div class="noticiaitem">
+                                <div class="noticiaimg">
+                                    <img src="" alt="" width="80" height="80" border="0">
+                                </div>
+                                <div class="noticiatitulo">
+                                    Titulo qualquer
+                                </div>
+                                <div class="noticiainfo">
+                                    Informaçao qualquer
+                                </div>
+                            </div>
+                        </div>
+                        <div style="clear:both"></div>
+    
+                    </div>
+                </div>
+
+            </div>
+            <div class="rightside">
+                <div class="widget">
+                    <div class="widget-titulo">SOCIAL</div>
+                    <div class="widget-conteudo">
+                        <a href="#"><img src="img/wifi.png" alt="" border="0" width="26" height="26"  ></a>
+                        <a href="#"><img src="img/gmail.png" alt="" border="0" width="26" height="26"  ></a>
+                        <a href="#"><img src="img/facebook.png" alt="" border="0" width="26" height="26" ></a>
+                        <a href="#"><img src="img/twitter.png" alt="" border="0" width="26" height="26" ></a>
+                        <a href="#"><img src="img/youtube.png" alt="" border="0" width="26" height="26" ></a>
+                    </div>
+                </div>
+                <div class="widget">
+                    <div class="widget-titulo">ÚLTIMAS NOTÍCIAS</div>
+                    <div class="widget-conteudo">
+                        <div class="widget-item">
+                                <a href="#">Titulo de noticia para que fique com pelo menos duas linhas para que eu possa exemplificar direito.
+                                </a>
+                        </div>
+                        <div class="widget-item">
+                            <a href="#">Titulo de noticia para que fique com pelo menos duas linhas para que eu possa exemplificar direito.
+                            </a>
+                         </div>
+                        <div class="widget-item">
+                                    <a href="#">Titulo de noticia para que fique com pelo menos duas linhas para que eu possa exemplificar direito.
+                                    </a>
+                        </div>
+                        <div class="widget-item">
+                                <a href="#">Titulo de noticia para que fique com pelo menos duas linhas para que eu possa exemplificar direito.
+                                </a>
+                        </div>
+                        <div class="widget-item">
+                                    <a href="#">Titulo de noticia para que fique com pelo menos duas linhas para que eu possa exemplificar direito.
+                                    </a>
+                        </div>
+                                    
+                    </div>
+                </div>
+                <div class="widget">
+                    <div class="widget-titulo">PUBLICIDADE</div>
+                    <div class="widget-conteudo">
+                        <img src="img/jquery.png" alt="" border="0" width="275" >
+                    </div>
+                </div>
+                <div class="widget">
+                    <div class="widget-titulo">ENCONTRE-NOS NO GITHUB</div>
+                    <div class="widget-conteudo">
+                        <iframe src="https://github.com/LucasMauric" frameborder="0" width="275" height="275">
+                        
+                        
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     
 </body>
